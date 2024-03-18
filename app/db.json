@@ -1,0 +1,194 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$ABn9qFKPlVIwfgTcQGHQIj$rnkxxYtrxbie0epcZYLSjLpWptnxqU+hlQQfCqAH5bQ=",
+            "last_login": "2024-03-18T15:25:52.516Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "admin@example.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-03-18T15:25:25.169Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "products.device",
+        "pk": 1,
+        "fields": {
+            "hrc_ip": "127.0.0.1",
+            "hrc_port": 502,
+            "unitId": 255,
+            "deviceName": "HRC room 163",
+            "deviceTemplateID": 1,
+            "room": 163
+        }
+    },
+    {
+        "model": "products.device",
+        "pk": 2,
+        "fields": {
+            "hrc_ip": "host.docker.internal",
+            "hrc_port": 5020,
+            "unitId": 255,
+            "deviceName": "Hotel Room Controller 200",
+            "deviceTemplateID": 1,
+            "room": 164
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 1,
+        "fields": {
+            "modbusId": 16980
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 2,
+        "fields": {
+            "modbusId": 16982
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 3,
+        "fields": {
+            "modbusId": 16984
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 4,
+        "fields": {
+            "modbusId": 16986
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 5,
+        "fields": {
+            "modbusId": 17012
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 6,
+        "fields": {
+            "modbusId": 17014
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 7,
+        "fields": {
+            "modbusId": 17032
+        }
+    },
+    {
+        "model": "products.tag",
+        "pk": 8,
+        "fields": {
+            "modbusId": 17034
+        }
+    },
+    {
+        "model": "products.location",
+        "pk": 1,
+        "fields": {
+            "name": "master"
+        }
+    },
+    {
+        "model": "products.devicelocation",
+        "pk": 1,
+        "fields": {
+            "device": 1,
+            "location": 1,
+            "tags": [
+                1,
+                2,
+                3,
+                4
+            ]
+        }
+    },
+    {
+        "model": "products.devicelocation",
+        "pk": 2,
+        "fields": {
+            "device": 2,
+            "location": 1,
+            "tags": [
+                1,
+                2,
+                3,
+                4
+            ]
+        }
+    },
+    {
+        "model": "products.scene",
+        "pk": 1,
+        "fields": {
+            "name": "welcome"
+        }
+    },
+    {
+        "model": "products.devicescene",
+        "pk": 1,
+        "fields": {
+            "device": 1,
+            "scene": 1
+        }
+    },
+    {
+        "model": "products.devicescene",
+        "pk": 2,
+        "fields": {
+            "device": 2,
+            "scene": 1
+        }
+    },
+    {
+        "model": "products.devicescenetag",
+        "pk": 1,
+        "fields": {
+            "device_scene": 1,
+            "tag": 1,
+            "value": 1
+        }
+    },
+    {
+        "model": "products.devicescenetag",
+        "pk": 2,
+        "fields": {
+            "device_scene": 1,
+            "tag": 2,
+            "value": 5
+        }
+    },
+    {
+        "model": "products.devicescenetag",
+        "pk": 3,
+        "fields": {
+            "device_scene": 2,
+            "tag": 5,
+            "value": 1
+        }
+    },
+    {
+        "model": "products.devicescenetag",
+        "pk": 4,
+        "fields": {
+            "device_scene": 2,
+            "tag": 6,
+            "value": 5
+        }
+    }
+]

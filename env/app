@@ -1,0 +1,6 @@
+SQL_DATABASE=roomio
+SQL_USER=admin
+SQL_PASSWORD=admin
+SQL_HOST=db
+SQL_PORT=5432
+DATABASE=postgres

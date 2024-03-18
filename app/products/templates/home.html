@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Your Site!</h1>
+    <p class="lead">This is the homepage of your site.</p>
+    <hr class="my-4">
+    <p>Feel free to explore and enjoy!</p>
+    {% if user.is_authenticated %}
+        <p>Welcome, {{ user.username }}!</p>
+        {% if user.is_superuser %}
+            <a href="{% url 'admin:index' %}" class="btn btn-primary">Admin</a>
+        {% endif %}
+    {% endif %}
+</div>
+{% endblock %}
