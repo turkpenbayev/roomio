@@ -81,14 +81,21 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ.get("SQL_DATABASE", "roomio"),
-        "USER": os.environ.get("SQL_USER", "admin"),
-        "PASSWORD": os.environ.get("SQL_PASSWORD", "admin"),
-        "HOST": os.environ.get("SQL_HOST", "localhost"),
-        "PORT": os.environ.get("SQL_PORT", "5432"),
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "db.sqlite3",
     }
 }
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": os.environ.get("SQL_DATABASE", "roomio"),
+#         "USER": os.environ.get("SQL_USER", "admin"),
+#         "PASSWORD": os.environ.get("SQL_PASSWORD", "admin"),
+#         "HOST": os.environ.get("SQL_HOST", "localhost"),
+#         "PORT": os.environ.get("SQL_PORT", "5432"),
+#     }
+# }
 
 
 # Password validation
